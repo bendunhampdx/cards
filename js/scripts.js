@@ -8,8 +8,8 @@ $(document).ready(function() {
   // let newPack = pack.toString().split(',');
   
 
-  numbers.forEach(function(number) {
-    suits.forEach(function(suit) {
+  suits.forEach(function(suit) {
+    numbers.forEach(function(number) {
       pack.push(number + " of " + suit);
       $("#output").append("<li>" + pack.toString().split(',').pop() + "</li>");
     })
